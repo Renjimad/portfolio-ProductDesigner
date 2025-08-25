@@ -8,9 +8,7 @@ const nextConfig = {
     // Allow deployment even if type errors exist
     ignoreBuildErrors: true,
   },
-  experimental: {
-    optimizeCss: true,
-  },
+  // Avoid optional CSS optimizer that may pull critters
 };
 
 module.exports = nextConfig;
