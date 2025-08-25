@@ -305,8 +305,22 @@ export default function ProfileNotesTrackerCaseStudy() {
 
         <section className="space-y-3">
           <h2 className="text-xl md:text-2xl font-anton" style={{ color: '#DBDB99' }}>Process Documentation</h2>
-          <div className="w-full h-40 rounded-xl bg-white/5 border border-white/10 grid place-items-center text-sm text-gray-400 font-roboto-mono">Screenshot: User flow diagram showing: Profile visit → Popup → Add note → Save → Dashboard view</div>
-          <div className="w-full h-40 rounded-xl bg-white/5 border border-white/10 grid place-items-center text-sm text-gray-400 font-roboto-mono">Screenshot: Technical architecture or file structure</div>
+          <div className="w-3/4 mx-auto rounded-xl overflow-hidden border border-white/10 bg-white/5">
+            <img
+              src="/profile%20Reminder/Flow.png"
+              alt="User flow diagram: Profile visit → Popup → Add note → Save → Dashboard view"
+              className="w-full h-auto block cursor-zoom-in"
+              onClick={() => setPreviewSrc('/profile%20Reminder/Flow.png')}
+            />
+          </div>
+          <div className="w-3/4 mx-auto rounded-xl overflow-hidden border border-white/10 bg-white/5">
+            <img
+              src="/profile%20Reminder/FileStructure.png"
+              alt="Technical architecture or file structure"
+              className="w-full h-auto block cursor-zoom-in"
+              onClick={() => setPreviewSrc('/profile%20Reminder/FileStructure.png')}
+            />
+          </div>
           <p className="font-roboto-mono text-gray-300">This project demonstrates end-to-end product thinking: from identifying a personal problem to shipping a working solution that I use daily.</p>
         </section>
       </article>
