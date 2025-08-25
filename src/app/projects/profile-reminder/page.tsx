@@ -45,7 +45,7 @@ export default function ProfileNotesTrackerCaseStudy() {
         <section className="space-y-4">
           <h2 className="text-xl md:text-2xl font-anton" style={{ color: '#DBDB99' }}>The Problem: Premium Success, Memory Failure</h2>
           <p className="font-roboto-mono text-gray-300">
-            After getting X Premium, my follower notifications exploded: 10+ new people daily. I developed a system — check their posts, follow genuine creators with real work, ignore bot accounts. But within days, I'd forget my own judgments about people.
+            After getting X Premium, my follower notifications exploded: 10+ new people daily. I developed a system — check their posts, follow genuine creators with real work, ignore bot accounts. But within days, I&#39;d forget my own judgments about people.
           </p>
           <div className="w-3/4 mx-auto grid grid-cols-2 gap-4">
             <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
@@ -256,7 +256,7 @@ export default function ProfileNotesTrackerCaseStudy() {
               <li><b>Minimal beats complex</b> — Simple solutions stick better</li>
               <li><b>Privacy matters</b> — Local storage was the right choice for trust</li>
             </ol>
-            <div><b>What I'd Do Differently:</b> Get user feedback earlier, test with a small group, document iterations better.</div>
+            <div><b>What I&#39;d Do Differently:</b> Get user feedback earlier, test with a small group, document iterations better.</div>
           </div>
           <div className="w-3/4 mx-auto grid grid-cols-3 gap-4">
             <div className="rounded-xl overflow-hidden border border-white/10 bg-white/5">
@@ -299,7 +299,7 @@ export default function ProfileNotesTrackerCaseStudy() {
             </ul>
           </div>
           <div className="font-roboto-mono text-gray-300">
-            <b>The Bigger Picture:</b> Personal productivity tools don't need to be complex CRMs; the best solutions fit seamlessly into existing workflows.
+            <b>The Bigger Picture:</b> Personal productivity tools don&#39;t need to be complex CRMs; the best solutions fit seamlessly into existing workflows.
           </div>
         </section>
 

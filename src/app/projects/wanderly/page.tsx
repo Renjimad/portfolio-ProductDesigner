@@ -147,7 +147,7 @@ export default function WanderlyCaseStudy() {
           <div className="space-y-3">
             <h3 className="text-lg font-anton" style={{ color: '#DBDB99' }}>Decision 2: Emotion-First Design</h3>
             <p className="font-roboto-mono text-gray-300"><b>Challenge:</b> Travel apps focus on logistics but ignore the emotional journey of solo travel.</p>
-            <p className="font-roboto-mono text-gray-300"><b>Solution:</b> I designed flows where users feel "heard" first, then gradually guided. The AI acknowledges fears, excitement, or loneliness before providing recommendations.</p>
+            <p className="font-roboto-mono text-gray-300"><b>Solution:</b> I designed flows where users feel &quot;heard&quot; first, then gradually guided. The AI acknowledges fears, excitement, or loneliness before providing recommendations.</p>
             <div className="font-roboto-mono text-gray-300">
               <b>Core Journey:</b>
               <ol className="list-decimal pl-6 space-y-1">
@@ -242,7 +242,7 @@ export default function WanderlyCaseStudy() {
           <p className="font-roboto-mono text-gray-300"><b>The biggest surprise:</b> Emotional safety matters more than logistics. Through my research, I discovered that users often value reassurance, validation, and a &quot;feeling of being looked after&quot; above the actual travel recommendations.</p>
           <ul className="list-disc pl-6 space-y-1 font-roboto-mono text-gray-300">
             <li><b>Simplicity beats complexity:</b> Users needed fewer steps, not more options.</li>
-            <li><b>AI-first requires different thinking:</b> Designing for open conversations meant abandoning traditional UI patterns and thinking about trust, context, and natural flow.</li>
+            <li><b>AI‑first requires different thinking:</b> Designing for open conversations meant abandoning traditional UI patterns and thinking about trust, context, and natural flow.</li>
             <li><b>Constraints can lead to better solutions:</b> Focusing on the core emotional need led to a stronger direction.</li>
             <li><b>Prototyping with AI</b> accelerated validation without heavy engineering.</li>
           </ul>
@@ -262,7 +262,7 @@ export default function WanderlyCaseStudy() {
             </ul>
           </div>
           <div className="font-roboto-mono text-gray-300">
-            <b>What I'd do differently:</b> Start with technical research alongside user research.
+            <b>What I&#39;d do differently:</b> Start with technical research alongside user research.
           </div>
         </section>
 

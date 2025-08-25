@@ -44,7 +44,7 @@ export default function DTTVCaseStudy() {
           <div className="w-1/2 mx-auto rounded-xl overflow-hidden border border-white/10 bg-white/5">
             <img
               src="/DTTV/PeerlistPost.png"
-              alt="Typical day's browsing habits — before tracking"
+              alt="Typical day&#39;s browsing habits — before tracking"
               className="w-full h-auto block cursor-zoom-in"
               onClick={() => setPreviewSrc('/DTTV/PeerlistPost.png')}
             />
@@ -75,7 +75,7 @@ export default function DTTVCaseStudy() {
               />
             </div>
             <p className="font-roboto-mono text-gray-300">My first prompt to the AI: <i>&quot;I want to track how much time I spend on different websites to understand my browsing addiction. Can you help me build a simple browser extension?&quot;</i></p>
-            <p className="font-roboto-mono text-gray-300">The AI helped me understand: how browser extensions work, what permissions I'd need, and how to track/store website visit data.</p>
+            <p className="font-roboto-mono text-gray-300">The AI helped me understand: how browser extensions work, what permissions I&#39;d need, and how to track/store website visit data.</p>
             <div className="w-1/2 mx-auto rounded-xl overflow-hidden border border-white/10 bg-white/5">
               <img
                 src="/DTTV/Redesign.png"
