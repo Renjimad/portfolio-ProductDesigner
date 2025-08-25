@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import ImageLightbox from '@/components/ImageLightbox';
@@ -35,9 +34,9 @@ export default function DTTVCaseStudy() {
         </header>
 
         <section className="space-y-4">
-          <h2 className="text-xl md:text-2xl font-anton" style={{ color: '#DBDB99' }}>The Problem I Couldn't Ignore</h2>
+          <h2 className="text-xl md:text-2xl font-anton" style={{ color: '#DBDB99' }}>The Problem I Couldn&#39;t Ignore</h2>
           <p className="font-roboto-mono text-gray-300">
-            I was trapped in a mindless digital loop. Every few minutes, I'd find myself checking social media "just once more" – refreshing email with no expectation of new messages, scrolling Peerlist for validation rather than networking, and constantly monitoring notifications. This wasn't productivity; it was digital addiction disguised as staying connected.
+            I was trapped in a mindless digital loop. Every few minutes, I&#39;d find myself checking social media &quot;just once more&quot; – refreshing email with no expectation of new messages, scrolling Peerlist for validation rather than networking, and constantly monitoring notifications. This wasn&#39;t productivity; it was digital addiction disguised as staying connected.
           </p>
           <p className="font-roboto-mono text-gray-300">
             The breaking point came when I realized I was checking email 100-200 times daily despite having no actual work to respond to. I was posting random, off-topic content on Peerlist just to see likes and followers grow, completely disconnected from my actual goals. My eyes were strained, my focus was shattered, and I was stressed from constantly seeking the next notification hit.
@@ -75,7 +74,7 @@ export default function DTTVCaseStudy() {
                 onClick={() => setPreviewSrc('/DTTV/FirstPrompt.png')}
               />
             </div>
-            <p className="font-roboto-mono text-gray-300">My first prompt to the AI: <i>"I want to track how much time I spend on different websites to understand my browsing addiction. Can you help me build a simple browser extension?"</i></p>
+            <p className="font-roboto-mono text-gray-300">My first prompt to the AI: <i>&quot;I want to track how much time I spend on different websites to understand my browsing addiction. Can you help me build a simple browser extension?&quot;</i></p>
             <p className="font-roboto-mono text-gray-300">The AI helped me understand: how browser extensions work, what permissions I'd need, and how to track/store website visit data.</p>
             <div className="w-1/2 mx-auto rounded-xl overflow-hidden border border-white/10 bg-white/5">
               <img
@@ -130,7 +129,7 @@ export default function DTTVCaseStudy() {
 
         <section className="space-y-3">
           <h2 className="text-xl md:text-2xl font-anton" style={{ color: '#DBDB99' }}>The Uncomfortable Truth</h2>
-          <p className="font-roboto-mono text-gray-300">I built an "Accountability Gate" to block distracting sites with a pre-question, then realized it would become another checking habit. I killed it after one day. Sometimes the best design decision is to not build something.</p>
+          <p className="font-roboto-mono text-gray-300">I built an &quot;Accountability Gate&quot; to block distracting sites with a pre-question, then realized it would become another checking habit. I killed it after one day. Sometimes the best design decision is to not build something.</p>
         </section>
 
         <section className="space-y-3">
@@ -165,8 +164,8 @@ export default function DTTVCaseStudy() {
         </section>
 
         <section className="space-y-3">
-          <h2 className="text-xl md:text-2xl font-anton" style={{ color: '#DBDB99' }}>What's Next?</h2>
-          <p className="font-roboto-mono text-gray-300">DTTV served its purpose. I still use it occasionally to check in on my habits, but the real value was in the awareness it created. I don't need to track every minute anymore – I've internalized the questioning: "Why am I here? What do I want to accomplish?"</p>
+          <h2 className="text-xl md:text-2xl font-anton" style={{ color: '#DBDB99' }}>What&#39;s Next?</h2>
+          <p className="font-roboto-mono text-gray-300">DTTV served its purpose. I still use it occasionally to check in on my habits, but the real value was in the awareness it created. I don&#39;t need to track every minute anymore – I&#39;ve internalized the questioning: &quot;Why am I here? What do I want to accomplish?&quot;</p>
           <p className="font-roboto-mono text-gray-300">Sometimes the most successful design is the one that makes itself unnecessary.</p>
         </section>
       </article>

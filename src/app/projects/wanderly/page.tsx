@@ -47,7 +47,7 @@ export default function WanderlyCaseStudy() {
 
         <section className="space-y-4">
           <p className="font-roboto-mono text-gray-300">
-            I spent 3 days designing Wanderly, an AI travel companion for solo travelers. What started as an unfocused hackathon project became an exploration of something most travel apps miss—solo travelers don't just need logistics, they need emotional support. Instead of overwhelming users with menus and options, I designed the entire experience around a single AI conversation that understands both your practical needs and your fears about traveling alone.
+            I spent 3 days designing Wanderly, an AI travel companion for solo travelers. What started as an unfocused hackathon project became an exploration of something most travel apps miss—solo travelers don&#39;t just need logistics, they need emotional support. Instead of overwhelming users with menus and options, I designed the entire experience around a single AI conversation that understands both your practical needs and your fears about traveling alone.
           </p>
           <div className="text-sm font-roboto-mono text-gray-300">
             <div><b>Role:</b> Solo Product Designer</div>
@@ -81,7 +81,7 @@ export default function WanderlyCaseStudy() {
           </p>
           
           <p className="font-roboto-mono text-gray-300">
-            The breakthrough came when I asked myself: <i>"What if the conversation itself IS the app?"</i>
+            The breakthrough came when I asked myself: <i>&quot;What if the conversation itself IS the app?&quot;</i>
           </p>
           <p className="font-roboto-mono text-gray-300">
             I threw out my entire initial flow. Instead of asking users to navigate through multiple screens to express their needs, what if they could just... talk? What if the AI became their travel buddy, not just another tool?
@@ -109,7 +109,7 @@ export default function WanderlyCaseStudy() {
             </div>
           </div>
           <p className="font-roboto-mono text-gray-300">
-            This pivot from complex UI to conversational simplicity became the core of Wanderly. Sometimes the best solution is NOT to build more features—it's to remove everything that gets in the way of the real need.
+            This pivot from complex UI to conversational simplicity became the core of Wanderly. Sometimes the best solution is NOT to build more features—it&#39;s to remove everything that gets in the way of the real need.
           </p>
         </section>
 
@@ -239,7 +239,7 @@ export default function WanderlyCaseStudy() {
 
         <section className="space-y-4">
           <h2 className="text-xl md:text-2xl font-anton" style={{ color: '#DBDB99' }}>What I Learned</h2>
-          <p className="font-roboto-mono text-gray-300"><b>The biggest surprise:</b> Emotional safety matters more than logistics. Through my research, I discovered that users often value reassurance, validation, and a "feeling of being looked after" above the actual travel recommendations.</p>
+          <p className="font-roboto-mono text-gray-300"><b>The biggest surprise:</b> Emotional safety matters more than logistics. Through my research, I discovered that users often value reassurance, validation, and a &quot;feeling of being looked after&quot; above the actual travel recommendations.</p>
           <ul className="list-disc pl-6 space-y-1 font-roboto-mono text-gray-300">
             <li><b>Simplicity beats complexity:</b> Users needed fewer steps, not more options.</li>
             <li><b>AI-first requires different thinking:</b> Designing for open conversations meant abandoning traditional UI patterns and thinking about trust, context, and natural flow.</li>

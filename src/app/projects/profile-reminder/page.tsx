@@ -159,8 +159,8 @@ export default function ProfileNotesTrackerCaseStudy() {
             <div><b>Key Design Decisions:</b></div>
             <ul className="list-disc pl-6 space-y-1">
               <li><b>Popup timing:</b> Appears on profile pages, not intrusive</li>
-              <li><b>Note categories:</b> Simple tags like "Client," "Friend," "Resource"</li>
-              <li><b>Visual design:</b> Dark, minimal interface that doesn't distract</li>
+              <li><b>Note categories:</b> Simple tags like &quot;Client,&quot; &quot;Friend,&quot; &quot;Resource&quot;</li>
+              <li><b>Visual design:</b> Dark, minimal interface that doesn&#39;t distract</li>
               <li><b>Storage choice:</b> Local-only for privacy and simplicity</li>
             </ul>
           </div>

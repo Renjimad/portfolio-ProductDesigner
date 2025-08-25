@@ -170,7 +170,9 @@ export default function LiquidProjects({ projects = DEFAULT_PROJECTS }: { projec
   // Play a short liquid-like click sound via WebAudio
   const playRippleSound = () => {
     try {
-      const ctx = new (window.AudioContext || (window as any).webkitAudioContext)();
+      const AudioCtx = (window as unknown as { AudioContext?: typeof AudioContext; webkitAudioContext?: typeof AudioContext }).AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+      if (!AudioCtx) return;
+      const ctx = new AudioCtx();
       const duration = 0.25;
       const sampleRate = ctx.sampleRate;
       const buffer = ctx.createBuffer(1, sampleRate * duration, sampleRate);

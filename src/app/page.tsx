@@ -4,8 +4,25 @@ import Scene from "@/components/Scene";
 import { motion } from "framer-motion";
 import { useCallback, useState } from "react";
 import { useScrollSpy } from "@/hooks/useScrollSpy";
+// Local types to avoid 'any'
+type LenisScrollOptions = {
+  offset?: number;
+  duration?: number;
+  easing?: (t: number) => number;
+};
+type LenisController = { scrollTo: (t: HTMLElement | string, opts?: LenisScrollOptions) => void };
+type SimpleProject = {
+  id: string;
+  name: string;
+  role: string;
+  duration: string;
+  href: string;
+  description: string;
+  ctaLabel: string;
+  ctaHref: string;
+};
 // Simple projects data for the minimal grid
-const simpleProjects = [
+const simpleProjects: SimpleProject[] = [
   { id: "wanderly", name: "Wanderly", role: "Product Design", duration: "24 Jul 2025", href: "/projects/wanderly", description: "Travel exploration concepts with expressive typography and micro‑interactions.", ctaLabel: "View case study", ctaHref: "/projects/wanderly" },
   { id: "dttv", name: "DTTV", role: "Personal Tool", duration: "12–14 Aug 2025", href: "/projects/dttv", description: "Tracks website visits and total time spent to help curb impulsive, repetitive social media checks.", ctaLabel: "View case study", ctaHref: "/projects/dttv" },
   { id: "profile-reminder", name: "Profile Reminder", role: "Personal Tool", duration: "11 Aug 2025", href: "/projects/profile-reminder", description: "Twitter relationship CRM: capture notes, qualify genuine people, and plan follow‑ups or cold DMs.", ctaLabel: "View case study", ctaHref: "/projects/profile-reminder" },
@@ -19,7 +36,7 @@ export default function Home() {
   const scrollTo = useCallback((id: string) => {
     const el = document.getElementById(id);
     if (!el) return;
-    const lenis = (globalThis as unknown as { __lenis?: { scrollTo: (t: HTMLElement | string, opts?: any) => void } }).__lenis;
+    const lenis = (globalThis as unknown as { __lenis?: LenisController }).__lenis;
     if (lenis && typeof lenis.scrollTo === 'function') {
       lenis.scrollTo(el, { offset: -10, duration: 1.1, easing: (t: number) => 1 - Math.pow(1 - t, 3) });
     } else {
@@ -101,13 +118,13 @@ export default function Home() {
               As a Product Designer based in Pune, I turn complex problems into elegant, user-focused solutions. My journey began with a deep dive into AI technology, but I discovered my true calling lies in designing products that make technology more human and accessible.
             </p>
             <p>
-              <b>My Approach:</b> I believe great design happens at the intersection of user needs, technical possibilities, and creative vision. Using AI tools for research and ideation, I uncover insights that inform every design decision. Then, through "vibe coding," I rapidly prototype and test ideas, ensuring concepts work in reality—not just in theory.
+              <b>My Approach:</b> I believe great design happens at the intersection of user needs, technical possibilities, and creative vision. Using AI tools for research and ideation, I uncover insights that inform every design decision. Then, through &quot;vibe coding,&quot; I rapidly prototype and test ideas, ensuring concepts work in reality—not just in theory.
             </p>
             <p>
-              <b>Why I Design:</b> Every product should feel intuitive, purposeful, and delightful. I'm passionate about creating experiences that users don't just tolerate, but genuinely enjoy. Whether it's helping people discover new travel destinations, build meaningful social connections, or develop healthier digital habits, I focus on solutions that make people's lives better in tangible ways.
+              <b>Why I Design:</b> Every product should feel intuitive, purposeful, and delightful. I&#39;m passionate about creating experiences that users don&#39;t just tolerate, but genuinely enjoy. Whether it&#39;s helping people discover new travel destinations, build meaningful social connections, or develop healthier digital habits, I focus on solutions that make people&#39;s lives better in tangible ways.
             </p>
             <p>
-              Currently seeking opportunities to collaborate with teams who value innovation, user-centered thinking, and aren't afraid to try something different.
+              Currently seeking opportunities to collaborate with teams who value innovation, user-centered thinking, and aren&#39;t afraid to try something different.
             </p>
           </div>
                 </motion.div>
@@ -153,18 +170,18 @@ export default function Home() {
             onClick={(e) => e.stopPropagation()}
           >
             {(() => {
-              const proj = simpleProjects.find(sp => sp.id === activeProjectId) as any;
+              const proj = simpleProjects.find((sp) => sp.id === activeProjectId);
               if (!proj) return null;
               return (
                 <div className="space-y-3">
                   <h3 className="text-2xl md:text-3xl font-anton" style={{ color: '#DBDB99' }}>{proj.name}</h3>
-                  <p className="text-sm font-roboto-mono text-gray-300">{proj.description || 'Case study coming soon.'}</p>
+                  <p className="text-sm font-roboto-mono text-gray-300">{proj.description || "Case study coming soon."}</p>
                   <div className="flex gap-3 pt-2">
                     <a
                       href={proj.ctaHref || '#'}
                       className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-yellow-500 text-black font-roboto-mono hover:bg-yellow-400 transition-colors"
                     >
-                      {proj.ctaLabel || 'Learn more'}
+                      {proj.ctaLabel || "Learn more"}
                     </a>
                     <button
                       onClick={() => setActiveProjectId(null)}
