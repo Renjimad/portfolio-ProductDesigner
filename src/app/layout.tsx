@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
 import DynamicCursor from "@/components/DynamicCursor";
+import { Analytics } from "@vercel/analytics/react";
 
 // Fonts are loaded via globals.css using Google Fonts @import and CSS variables
 
@@ -32,6 +33,7 @@ export default function RootLayout({
           <DynamicCursor />
           {children}
         </LenisProvider>
+        <Analytics />
       </body>
     </html>
   );
